@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sadiqsteel *.css
+recursive-include sadiqsteel *.csv
+recursive-include sadiqsteel *.html
+recursive-include sadiqsteel *.ico
+recursive-include sadiqsteel *.js
+recursive-include sadiqsteel *.json
+recursive-include sadiqsteel *.md
+recursive-include sadiqsteel *.png
+recursive-include sadiqsteel *.py
+recursive-include sadiqsteel *.svg
+recursive-include sadiqsteel *.txt
+recursive-exclude sadiqsteel *.pyc
