@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DBE-.DD.-.MM.-.YYYY.-.#####",
+ "creation": "2024-06-01 18:29:24.364954",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_si6c6",
+  "day_entry_no",
+  "section_break_efz7n",
+  "day_book_entry_items",
+  "section_break_zpbsu",
+  "total_received",
+  "column_break_6iuoy",
+  "total_payment",
+  "column_break_in8jr",
+  "diffrence",
+  "amended_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "day_entry_no",
+   "fieldtype": "Data",
+   "label": "Day Entry No"
+  },
+  {
+   "fieldname": "day_book_entry_items",
+   "fieldtype": "Table",
+   "label": "Day Book Entry Items",
+   "options": "Day Book Entry Items"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_received",
+   "fieldtype": "Currency",
+   "label": "Total Received",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_payment",
+   "fieldtype": "Currency",
+   "label": "Total Payment",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "diffrence",
+   "fieldtype": "Currency",
+   "label": "Diffrence",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Day Book Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_si6c6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_efz7n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_zpbsu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6iuoy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_in8jr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "0\n1\n2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Journal Entry",
+   "link_fieldname": "ref_no"
+  }
+ ],
+ "modified": "2024-06-04 14:25:49.073375",
+ "modified_by": "Administrator",
+ "module": "Sadiq Steel",
+ "name": "Day Book Entry",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
