@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day Book Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .bold-row {
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+        }
+        .date-range {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .date-range div {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 style="font-weight: bold;">SADIQ STEEL</h1>
+    <h2>CASH / BANK BOOK</h2>
+    <div class="date-range">
+        <div>
+            {% if filters.from_date %}
+            <span style="font-weight: bold">From Date: </span>{{frappe.datetime.str_to_user(filters.from_date) }}
+            {% endif %}
+        </div>
+        <div>
+            {% if filters.to_date %}
+            <span style="font-weight: bold">To Date: </span>{{ frappe.datetime.str_to_user(filters.to_date) }}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<h2 style="text-align: center;">Day Book Report</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>VOU#</th>
+            <th>Account</th>
+            <th>Description</th>
+            <th>Received</th>
+            <th>Payment</th>
+            <th>Balance</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+        <tr class="{% if row.is_bold %}bold-row{% endif %}">
+            <td>{{ frappe.datetime.str_to_user(row.date) }}</td>
+            <td>{{ row.voucher_no }}</td>
+            <td>{{ row.account }}</td>
+            <td>{{ row.description }}</td>
+            <td>{{ row.received }}</td>
+            <td>{{ row.payment }}</td>
+            <td>{{ row.balance }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
