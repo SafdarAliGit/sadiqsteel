@@ -52,7 +52,31 @@ def get_account_type(account_name):
     else:
         return None
 
+@frappe.whitelist()
+def get_letter_head(**args):
+    b_company = args.get('b_company')
+    doc = frappe.qb.DocType("B Company")
+    query = (
+        frappe.qb.from_(doc)
+        .select(
+            doc.dn_letter_head,
+            doc.snv_letter_head,
+            doc.qtn_letter_head,
+            doc.dn_series,
+            doc.snv_series,
+            doc.qtn_series,
+        ).where((doc.name == b_company))
+    )
+    result = query.run(as_dict=True)
 
+    return {
+        "dn_letter_head": result[0].get("dn_letter_head",None),
+        "snv_letter_head": result[0].get("snv_letter_head",None),
+        "qtn_letter_head": result[0].get("qtn_letter_head",None),
+        "dn_series": result[0].get("dn_series",None),
+        "snv_series": result[0].get("snv_series",None),
+        "qtn_series": result[0].get("qtn_series",None),
+    }
 # @frappe.whitelist()
 # def add_crv(**args):
 #     source_name = frappe.get_doc("Cash Receipt Voucher", args.get('source_name'))

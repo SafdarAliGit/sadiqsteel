@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_name",
+ "creation": "2024-03-30 14:36:57.632018",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "dn_letter_head",
+  "snv_letter_head",
+  "qtn_letter_head",
+  "dn_series",
+  "snv_series",
+  "qtn_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company name",
+   "unique": 1
+  },
+  {
+   "fieldname": "dn_letter_head",
+   "fieldtype": "Link",
+   "label": "DN Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "snv_letter_head",
+   "fieldtype": "Link",
+   "label": "SNV Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "qtn_letter_head",
+   "fieldtype": "Link",
+   "label": "QTN Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "dn_series",
+   "fieldtype": "Select",
+   "label": "DN Series",
+   "options": "DC-.YY.-\nDN-RET-.YY.-\nDC-ST-.YY.-\nDC-LS-.YY.-\nDC-NSSI-.YY.-\nDC-UTC-.YY.-\nDC-AMC-.YY.-\nDC-MZ-.YY.-\nDC-ZSI-.YY.-\nDC-AAT-.YY.-\nDC-AA-.YY.-\nDC-MH-.YY.-\nDC-SST-.YY.-\nDC-SS-.YY.-\nDC-SSE-.YY.-\nDC-SSA-.YY.-\nDC-ISC-.YY.-\nDC-JB-.YY.-\nDC-AHM-.YY.-\nDC-MHJ-.YY.-"
+  },
+  {
+   "fieldname": "snv_series",
+   "fieldtype": "Select",
+   "label": "SNV Series",
+   "options": "ACC-SINV-.YYYY.-\nACC-SINV-RET-.YYYY.-"
+  },
+  {
+   "fieldname": "qtn_series",
+   "fieldtype": "Select",
+   "label": "QTN Series",
+   "options": "SAL-QTN-.YYYY.-\nSS-YYYY-MM-\nLSI-YYYY-\nQTN-2024-\nSSE-SS-YY-MM-\nAMC-2024-\nJB-QTN-\nST-YY-Q-\nZSI-QTN-\nQTN-NSS-YY-\nUT-QTN-\nMH-QTN-\nAA-YYYY-\nMZB-QTN-YYYY-\nAAT-YYYY-"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-06 22:46:54.504804",
+ "modified_by": "Administrator",
+ "module": "Sadiq Steel",
+ "name": "B Company",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
