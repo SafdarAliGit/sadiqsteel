@@ -51,7 +51,7 @@
    "fieldname": "snv_series",
    "fieldtype": "Select",
    "label": "SNV Series",
-   "options": "ACC-SINV-.YYYY.-\nACC-SINV-RET-.YYYY.-"
+   "options": "\nACC-SINV-.YYYY.-\nACC-SINV-RET-.YYYY.-\nST-.YYYY.-\n-LS-.YYYY.-\nNSSI-.YYYY.-\nUTC-.YYYY.-\nAMC-.YYYY.-\nMZ-.YYYY.-\nZSI-.YYYY.-\nAAT-.YYYY.-\nAA-.YYYY.-\nMH-.YYYY.-\nSST-.YYYY.-\nSS-.YYYY.-\nSSE-.YYYY.-\nSSA-.YYYY.-\nISC-.YYYY.-\nJB-.YYYY.-\nAHM-.YYYY.-\nMHJ-.YYYY.-"
   },
   {
    "fieldname": "qtn_series",
@@ -62,7 +62,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-06 22:46:54.504804",
+ "modified": "2024-06-08 09:55:22.390323",
  "modified_by": "Administrator",
  "module": "Sadiq Steel",
  "name": "B Company",
