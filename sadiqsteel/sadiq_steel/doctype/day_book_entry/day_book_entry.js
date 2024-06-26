@@ -1,6 +1,13 @@
 frappe.ui.form.on('Day Book Entry', {
     refresh(frm) {
-
+        frm.set_query('account_name', 'day_book_entry_items', function (doc, cdt, cdn) {
+            var d = locals[cdt][cdn];
+            return {
+                filters: [
+                    ["Account", "is_group", "=", 0]
+                ]
+            };
+        });
     }
 });
 
