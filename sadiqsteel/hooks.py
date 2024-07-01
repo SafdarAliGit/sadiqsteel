@@ -215,7 +215,13 @@ app_license = "MIT"
 # auth_hooks = [
 #	"sadiqsteel.auth.validate"
 # ]
-override_doctype_class = {
-    "Sales Invoice": "sadiqsteel.overrides.sales_invoice_overrides.SalesInvoiceOverrides",
+# override_doctype_class = {
+#     "Sales Invoice": "sadiqsteel.overrides.sales_invoice_overrides.SalesInvoiceOverrides",
+# }
+doc_events = {
+    "Sales Invoice": {
+        "on_submit": "sadiqsteel.overrides.sales_invoice_overrides.on_submit",
+        "before_save": "sadiqsteel.overrides.sales_invoice_overrides.before_save"
+    }
 }
 required_apps = ["erpnext"]
