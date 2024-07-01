@@ -4,6 +4,7 @@
  "autoname": "field:company_name",
  "creation": "2024-03-30 14:36:57.632018",
  "default_view": "List",
+ "description": "https://sadiqsteel.thesmarterp.com/app/doctype/B%20Company#",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -57,54 +58,19 @@
    "fieldname": "qtn_series",
    "fieldtype": "Select",
    "label": "QTN Series",
-   "options": "SAL-QTN-.YYYY.-\nSS-YYYY-MM-\nLSI-YYYY-\nQTN-2024-\nSSE-SS-YY-MM-\nAMC-2024-\nJB-QTN-\nST-YY-Q-\nZSI-QTN-\nQTN-NSS-YY-\nUT-QTN-\nMH-QTN-\nAA-YYYY-\nMZB-QTN-YYYY-\nAAT-YYYY-\nIS-.YYYY.-"
+   "options": "SAL-QTN-.YYYY.-\nSS-.YYYY.-.MM.-\nLSI-.YYYY.-\nQTN-.YYYY.-\nSSE-SS-.YY.-.MM.-\nAMC-QTN-.YYYY.-\nJB-QTN-\nST-.YY.-Q-\nZSI-QTN-\nQTN-NSS-.YY.-\nUT-QTN-\nMH-QTN-\nAA-QTN-.YYYY.-\nMZB-QTN-.YYYY.-\nAAT-QTN-.YYYY.-\nIS-.YYYY.-"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-26 12:17:44.388274",
+ "modified": "2024-06-26 14:17:10.785320",
  "modified_by": "Administrator",
  "module": "Sadiq Steel",
  "name": "B Company",
  "name_case": "Title Case",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Accounts Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Stock Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
