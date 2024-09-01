@@ -58,7 +58,7 @@ class DayBookEntry(Document):
                 "party": party,
                 "credit_in_account_currency": credit_in_account_currency,
                 "debit_in_account_currency": debit_in_account_currency,
-                "remarks": remarks
+                "user_remark": remarks
             })
 
         # Submit the Journal Entry
